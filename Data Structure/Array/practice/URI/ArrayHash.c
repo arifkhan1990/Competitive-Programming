@@ -2,7 +2,7 @@
                       Judge: URI online judge
                       problem: Array Hash
                       Difficulty: Easy
-                      Time Complexity: O(N^2)  (maybe)
+                      Time Complexity: O(N*M) ba O(N>M or M>N)
                       Problem Link: https://www.urionlinejudge.com.br/judge/en/problems/view/1257
 */
 
