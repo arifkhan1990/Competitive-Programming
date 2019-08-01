@@ -1,0 +1,39 @@
+﻿Map :
+  
+  Map হচ্ছে STL এর  একটা  associative container। যা key, value কম্বিনেসানে ডেটা কে ষ্টোর করে। যেখানে key একটা ইউনিক  value, যা পরিবর্তন করা যায় না। আমারা Map এ  O(n)সময়ে ডেটা search, remove এবং insert করতে পারি।
+ যেমন ঃ- আমরা একটা ক্লাসের ছাত্রছাত্রীর নাম ও রোল যদি map এ ষ্টোর করি , তাহলে -
+       রোল এইখানে key এবং নাম এখানে value হিসেবে ষ্টোর করতে পারি। আমরা যখনি রোল কল করবো তখনি ছাত্রছাত্রীদের নাম দেখাবে।
+
+               key                       Name
+
+            12134335                     rifat
+            23874834                      raj
+
+ note: Map এর key সব সময় ছোট থেকে বড় আকারে সাজানো থাকে , string এর সময় তা  lexicographically সাজানো থাকে।
+
+ Map Template:
+    map<key_type, data_type>
+
+ Declaration :
+    map<string, int>mp;
+
+ Map size :
+    mp.size();
+
+ Map Insert :
+    mp.insert(make_pair("arif", 4));
+
+ Map insert data in decending order :
+   map<int, string, greater <int> > mymap; 
+
+ Map Erase :
+   mp.erase(val);
+
+ Map Find :
+   mp.find(4);
+
+ Map Empty :
+   mp.empty();
+ 
+ Map clear:
+   mp.clear();
