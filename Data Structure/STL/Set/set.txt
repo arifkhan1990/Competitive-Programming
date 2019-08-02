@@ -1,0 +1,58 @@
+﻿Set :
+  
+  Set হচ্ছে STL এর  একটা  associative container। Set এ প্রতিটা ডেটাই ইউনিক। এইখানে duplicate data insert করা যায় না।
+ Set Template:
+    set<data_type>
+
+ Declaration :
+    set<int>st;
+
+ Set size :
+    st.size();
+
+ Set Insert :
+    st.insert(4);
+
+ Set insert data in decending order :
+   set<int, greater <int> > st; 
+
+ Set Erase :
+   st.erase(val);
+
+ Set Find :
+   st.find(4);
+
+ Set Empty :
+   st.empty();
+ 
+ Set clear:
+   mp.clear();
+
+ Set Access :
+  
+  auto it = mp.begin();
+  for(; it != mp.end(); it++ ){
+     cout << *it << endl;
+	 }
+
+ Set Upper bound:
+    mp.upper_bound(key);
+
+ Set Lower bound:
+   mp.lower_bound(key);
+   
+   
+----> Multiset :
+  Multiset অনেক টা Set মতই। শুধু  এইখানে duplicate data insert করা যায়। যেমনঃ-
+      
+                          value
+                            11
+			    22
+			    22
+			    33
+ 			    44
+ MultiSet Template:
+    multiset<data_type>
+
+ Declaration :
+    multiset<int>st;

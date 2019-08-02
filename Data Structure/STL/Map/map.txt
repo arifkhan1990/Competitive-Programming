@@ -37,3 +37,36 @@
  
  Map clear:
    mp.clear();
+
+ Map Access :
+  
+  auto it = mp.begin();
+  for(; it != mp.end(); it++ ){
+     cout << it->second << endl;
+	 }
+
+ Map Upper bound:
+    mp.upper_bound(key);
+
+ Map Lower bound:
+   mp.lower_bound(key);
+   
+   
+----> Multimap :
+  Multimap অনেক টা Map মতই। শুধু এইখানে একাদিক ডেটা একই কী তে রাখা যায়। যেমনঃ-
+      
+               key                       Name
+
+               1                           20
+               2                           30
+			   3                           46
+			   3                           50
+			   4                           17
+			   5                           79
+			   5                           38
+
+ MultiMap Template:
+    multimap<key_type, data_type>
+
+ Declaration :
+    multimap<string, int>mp;
