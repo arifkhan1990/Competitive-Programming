@@ -104,6 +104,7 @@ int main()
     s = "";
    }
 
+   //for(auto it = mp.begin(); it != mp.end(); it++) cout << it->first << " " << it->second << endl;
     while(cin >> s){
     map<string, int>::iterator it = mp.find(s);
     cout << ( (mp.count(s))? it->second: 0) << endl;
