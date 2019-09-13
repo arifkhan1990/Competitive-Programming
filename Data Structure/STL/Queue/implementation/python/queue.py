@@ -1,6 +1,6 @@
 import queue
 
-q = queue.Queue()
+q = Queue()
 
 n = int(input())
 
