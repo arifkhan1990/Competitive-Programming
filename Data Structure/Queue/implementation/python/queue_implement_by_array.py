@@ -1,24 +1,53 @@
 class Queue:
-    def __init__(self):
-        self.items = []
+    def __init__(self, max_size = 0):
+        self.size = max_size
+        self.arr = []
     
-    def isEmpty(self):
-        return self.items == []
+    def enqueue(self, data):
+        if not self.isFull():
+            self.arr.append(data)
 
-    def enqueue(self, item):
-        self.items.insert(0,item)
-    
     def dequeue(self):
-        return self.items.pop()
+        if not self.isEmpty():
+            self.arr.pop(0)
+
+    def isEmpty(self):
+        return len(self.arr) == 0
     
-    def size(self):
-        return len(self.items)
+    def isFull(self):
+        return len(self.arr) == self.size
 
-q = Queue()
+    def front(self):
+        if not self.isEmpty():
+            return self.arr[0]
 
-q.enqueue(4)
-q.enqueue('dogs')
-q.enqueue(True)
+    def rear(self):
+        if not self.isEmpty():
+            return self.arr[-1]
+    
+    def Qusize(self):
+        return len(self.arr)
 
-print("Queue size: ", q.size())
-print("Empty or not : ", q.isEmpty())
+q = Queue(5)
+
+n = int(input())
+
+for i in range(n):
+    k = int(input())
+    q.enqueue(k)
+
+print("Size of Queue = ", q.Qusize())
+print("Queue is Full = ", q.isFull())
+print("Queue is empty = ", q.isEmpty())
+print("First element of queue = ", q.front())
+print("Last element of queue = ", q.rear())
+q.dequeue();
+print("New First element of queue = ", q.front())
+
+print("Queue element are :",end=' ')
+
+while not q.isEmpty():
+    print(q.front(),end=' ')
+    q.dequeue()
+print()
+print("Queue is empty = ", q.isEmpty())
