@@ -7,8 +7,8 @@ class Node:
         self.next = None
         self.previous = None
 
-        def __str__(self):
-            return f"{self.data}"
+    def __str__(self):
+        return f"{self.data}"
 
 
 class DoublyLinkedList:
