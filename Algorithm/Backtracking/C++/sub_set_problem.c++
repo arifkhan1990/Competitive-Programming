@@ -30,8 +30,5 @@ int main(){
     vector<int> nums{ 1, 2, 3 };
     vector<vector<int>> res = subsets(nums);
     cout << res.size() << endl;
-
-
-    
     return 0;
 }
