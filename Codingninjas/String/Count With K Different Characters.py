@@ -1,3 +1,10 @@
+'''
+        Time Complexity: O(N ^ 2)
+        Space complexity: O(1)
+
+        Where N denotes the length of the given string.
+'''
+
 from typing import *
 
 def countSubStrings(s: str, k: int) -> int:
